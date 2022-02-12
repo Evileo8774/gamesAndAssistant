@@ -79,6 +79,7 @@ $(document).ready(function(){
                 console.log(music, int);
                 if(alphabet.length == 0){
                     $(".timer").html("Terminé !");
+                    $(".letter").html("");
                     $(document).off();
                 }
             }
