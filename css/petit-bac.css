@@ -62,3 +62,14 @@ label{
     width: 50px;
     font-size: 110%;
 }
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table tr td{
+    border: 1px solid black;
+    padding: 5px;
+    height: 14px;
+}
