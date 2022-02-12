@@ -87,7 +87,7 @@ $(document).ready(function(){
     }
 
     function getCategories(C){
-        var categoriesArray = ["Prénom fille", "Prénom garçon", "Pays/Ville", "Marque", "Personne Historique", "Personnage fictif", "Célébrité", "Film/Série", "Végétal", "Animal", "Métier", "Objet", "Anatomie", "Couleur", "Plat", "Minéraux", "Jeu de société/Jeu vidéo", "Mot de 4 lettres ou moins", "Mot de plus de 8 lettres", "Mot anglais", "Adjectif", "Verbe", "Matériel Scolaire"];
+        var categoriesArray = ["Prénom fille", "Prénom garçon", "Pays/Ville", "Marque", "Personne Historique", "Personnage fictif", "Célébrité", "Film/Série", "Végétal", "Animal", "Métier", "Objet", "Anatomie", "Couleur", "Plat", "Minéraux", "Jeu de société/Jeu vidéo", "Mot de 4 lettres ou moins", "Mot de plus de 8 lettres", "Mot anglais", "Adjectif", "Verbe", "Matériel Scolaire", "Vêtement", "Infiniment grand", "Infiniment petit", "Mythologie", "Sport"];
         var chosenCategories = [];
         for(i = 0; i < C; i++){
             var int = getRandomArbitrary(0, categoriesArray.length-1);
