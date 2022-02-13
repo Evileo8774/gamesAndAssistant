@@ -6,6 +6,7 @@
 body, *{
     margin: 0;
     background-color: #F1F1F1;
+    font-family: 'PressStart2P Regular', cursive;
 }
 
 a{
@@ -20,7 +21,6 @@ a:hover{
 }
 
 header{
-    font-family: 'PressStart2P Regular', cursive;
     font-size: 200%;
 
     width: 100vw;
@@ -78,8 +78,6 @@ section{
 }
 
 .title{
-    font-family: 'PressStart2P Regular', cursive;
-
     margin-top: 1%;
 }
 
@@ -105,16 +103,18 @@ article, article:not(hover){
     justify-content: center;
 
     color: white;
-
-    font-family: 'PressStart2P Regular', cursive;
 }
 
 article:hover{
     cursor: pointer;
+    background: none;
+    color: #333333;
 }
 
 .petit-bac:hover{
-    background: none;
-    color: #333333;
     background-image: url("../data/images/accueil/petit-bac.jpg");
+}
+
+.puissance-4:hover{
+    background-image: url("../data/images/accueil/puissance-4.jpg");
 }
