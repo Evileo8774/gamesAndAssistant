@@ -121,7 +121,9 @@ article:hover{
     background-image: url("../data/images/accueil/puissance-4.jpg");
 }
 
-
+.tic-tac-boum:hover{
+    background-image: url("../data/images/accueil/tic-tac-boum.jpeg");
+}
 
 
 @media screen and (max-width: 1024px){
