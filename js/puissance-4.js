@@ -109,15 +109,95 @@ $(document).ready(function(){
         redCount = 0;
 
         //diagonale
-        
+
+        let border = false;
+        var tempY = y, tempX = x;
+
+        while(border == false){
+            if(tempY == 0 || tempX == 0){
+                border = true;
+            } else {
+                tempY--;
+                tempX--;
+            }
+        }
+
+        border = false;
+
+        while(border == false){
+            if($("."+tempY+tempX).hasClass("red")){
+                redCount++;
+                yellowCount = 0;
+                verifVictory(redCount, "rouges");
+            } else if($("."+tempY+tempX).hasClass("yellow")){
+                yellowCount++;
+                redCount = 0;
+                verifVictory(yellowCount, "jaunes");
+            } else {
+                yellowCount = 0;
+                redCount = 0;
+            }
+
+            if(tempY == grid.length-1 || tempX == grid[tempY].length-1){
+                border = true;
+            } else {
+                tempY++;
+                tempX++;
+            }
+        }
+
+        yellowCount = 0;
+        redCount = 0;
+
+        //autre diagonale
+
+        border = false;
+        var tempY = y, tempX = x;
+
+        while(border == false){
+            if(tempY == grid.length-1 || tempX == 0){
+                border = true;
+            } else {
+                tempY++;
+                tempX--;
+            }
+        }
+
+        border = false;
+
+        while(border == false){
+            if($("."+tempY+tempX).hasClass("red")){
+                redCount++;
+                yellowCount = 0;
+                verifVictory(redCount, "rouges");
+            } else if($("."+tempY+tempX).hasClass("yellow")){
+                yellowCount++;
+                redCount = 0;
+                verifVictory(yellowCount, "jaunes");
+            } else {
+                yellowCount = 0;
+                redCount = 0;
+            }
+
+            if(tempY == 0 || tempX == grid[tempY].length-1){
+                border = true;
+            } else {
+                tempY--;
+                tempX++;
+            }
+        }
     }
 
     function verifVictory(count, color){
         if(count >= 4){
-            alert("Les "+color+" gagnent !");
+            setTimeout(function(){
+                alert("Les "+color+" gagnent !");
             if(confirm("Recommencer ?")){
                 resetGrid();
+            } else {
+                window.location.href = "../index.html";
             }
+            }, 1);
         }
     }
 
