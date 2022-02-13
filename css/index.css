@@ -24,7 +24,7 @@ header{
     font-size: 200%;
 
     width: 100vw;
-    height: 10vh;
+    height: 50px;
 
 
     display: flex;
@@ -41,6 +41,8 @@ nav{
     height: 6vh;
 
     display: flex;
+
+    z-index: 100;
 }
 
 nav ul{
@@ -117,4 +119,18 @@ article:hover{
 
 .puissance-4:hover{
     background-image: url("../data/images/accueil/puissance-4.jpg");
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    section div{
+        flex-wrap: wrap;
+        height: 40vh;
+    }
+
+    article{
+        margin: 20px;
+    }
 }
