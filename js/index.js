@@ -2,6 +2,7 @@ $(document).ready(function(){
     $(".petit-bac").on("click", function(){window.location.href = "html/petit-bac.html";});
     $(".puissance-4").on("click", function(){window.location.href = "html/puissance-4.html";});
     $(".tic-tac-boum").on("click", function(){window.location.href = "html/tic-tac-boum.html";});
+    $(".pendu").on("click", function(){window.location.href = "html/pendu.html";});
 
     $(function(){
         var nav = $("nav");

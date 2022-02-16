@@ -125,6 +125,10 @@ article:hover{
     background-image: url("../data/images/accueil/tic-tac-boum.jpeg");
 }
 
+.pendu:hover{
+    background-image: url("../data/images/accueil/pendu.jpg");
+    color: white;
+}
 
 @media screen and (max-width: 1024px){
     section div{
