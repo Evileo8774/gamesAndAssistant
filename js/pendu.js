@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     var chosenWord = "", hiddenWord = "", modifiedWord = "";
+    countToDeath = 0;
 
     word();
 
@@ -64,7 +65,11 @@ $(document).ready(function(){
             }
         }
         if(found == true) $(this).addClass("true");
-        else $(this).addClass("false");
+        else {
+            $(this).addClass("false"); 
+            countToDeath++; 
+            $(".drawing").html("<img src='../data/pendu/e"+countToDeath+".png' alt='pendu'/>");
+        }
         displayWord(hiddenWord);
         wordFound();
     });
@@ -72,6 +77,9 @@ $(document).ready(function(){
     function wordFound(){
         if(hiddenWord == chosenWord){
             alert("Bravo tu as gagné !");
+            window.location.href = "pendu.html";
+        } else if(countToDeath == 9){
+            alert("Vous avez perdu !");
             window.location.href = "pendu.html";
         }
     }
@@ -82,12 +90,5 @@ $(document).ready(function(){
 
     function displayWord(a){
         $(".word").html(a);
-    }
-
-    function strcmp(a, b) {
-        a = a.toString(), b = b.toString();
-        for (var i=0,n=Math.max(a.length, b.length); i<n && a.charAt(i) === b.charAt(i); ++i);
-        if (i === n) return 0;
-        return a.charAt(i) > b.charAt(i) ? -1 : 1;
     }
 });
