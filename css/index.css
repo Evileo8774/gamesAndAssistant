@@ -130,6 +130,11 @@ article:hover{
     color: white;
 }
 
+.ttc:hover{
+    background-image: url("../data/images/accueil/tictactoe.jpeg");
+    color: white;
+}
+
 @media screen and (max-width: 1024px){
     section div{
         flex-wrap: wrap;
