@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Evileoo">
+
+        <title>Mastermind</title>
+
+        <link href="../css/mastermind.css" rel="stylesheet">
+
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/mastermind.js"></script>
+    </head>
+
+    
+    <body>
+        <header>Mastermind</header>
+        <div class="colors">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="cyan"></div>
+            <div class="yellow"></div>
+            <div class="orange"></div>
+            <div class="blue"></div>
+            <div class="purple"></div>
+            <div class="magenta"></div>
+        </div>
+        <div class="valider">
+            <button class="btnValider">Valider le tour</button>
+        </div>
+        
+
+        <div class="index">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+        </div>
+
+        <div class="game">
+            <div class="playerContainers">
+                <div class="gameElement">
+                    <div class="dot a1"></div>
+                    <div class="dot a2"></div>
+                    <div class="dot a3"></div>
+                    <div class="dot a4"></div>
+                    <div class="dot a5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot b1"></div>
+                    <div class="dot b2"></div>
+                    <div class="dot b3"></div>
+                    <div class="dot b4"></div>
+                    <div class="dot b5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot c1"></div>
+                    <div class="dot c2"></div>
+                    <div class="dot c3"></div>
+                    <div class="dot c4"></div>
+                    <div class="dot c5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot d1"></div>
+                    <div class="dot d2"></div>
+                    <div class="dot d3"></div>
+                    <div class="dot d4"></div>
+                    <div class="dot d5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot e1"></div>
+                    <div class="dot e2"></div>
+                    <div class="dot e3"></div>
+                    <div class="dot e4"></div>
+                    <div class="dot e5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot f1"></div>
+                    <div class="dot f2"></div>
+                    <div class="dot f3"></div>
+                    <div class="dot f4"></div>
+                    <div class="dot f5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot g1"></div>
+                    <div class="dot g2"></div>
+                    <div class="dot g3"></div>
+                    <div class="dot g4"></div>
+                    <div class="dot g5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot h1"></div>
+                    <div class="dot h2"></div>
+                    <div class="dot h3"></div>
+                    <div class="dot h4"></div>
+                    <div class="dot h5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot i1"></div>
+                    <div class="dot i2"></div>
+                    <div class="dot i3"></div>
+                    <div class="dot i4"></div>
+                    <div class="dot i5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot j1"></div>
+                    <div class="dot j2"></div>
+                    <div class="dot j3"></div>
+                    <div class="dot j4"></div>
+                    <div class="dot j5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot k1"></div>
+                    <div class="dot k2"></div>
+                    <div class="dot k3"></div>
+                    <div class="dot k4"></div>
+                    <div class="dot k5"></div>
+                </div>
+                <div class="gameElement">
+                    <div class="dot l1"></div>
+                    <div class="dot l2"></div>
+                    <div class="dot l3"></div>
+                    <div class="dot l4"></div>
+                    <div class="dot l5"></div>
+                </div>
+            </div>
+            <div class="resultContainers">
+                <div class="resultElement">
+                    <div class="minidot A1"></div>
+                    <div class="minidot A2"></div>
+                    <div class="minidot A3"></div>
+                    <div class="minidot A4"></div>
+                    <div class="minidot A5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot B1"></div>
+                    <div class="minidot B2"></div>
+                    <div class="minidot B3"></div>
+                    <div class="minidot B4"></div>
+                    <div class="minidot B5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot C1"></div>
+                    <div class="minidot C2"></div>
+                    <div class="minidot C3"></div>
+                    <div class="minidot C4"></div>
+                    <div class="minidot C5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot D1"></div>
+                    <div class="minidot D2"></div>
+                    <div class="minidot D3"></div>
+                    <div class="minidot D4"></div>
+                    <div class="minidot D5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot E1"></div>
+                    <div class="minidot E2"></div>
+                    <div class="minidot E3"></div>
+                    <div class="minidot E4"></div>
+                    <div class="minidot E5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot F1"></div>
+                    <div class="minidot F2"></div>
+                    <div class="minidot F3"></div>
+                    <div class="minidot F4"></div>
+                    <div class="minidot F5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot G1"></div>
+                    <div class="minidot G2"></div>
+                    <div class="minidot G3"></div>
+                    <div class="minidot G4"></div>
+                    <div class="minidot G5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot H1"></div>
+                    <div class="minidot H2"></div>
+                    <div class="minidot H3"></div>
+                    <div class="minidot H4"></div>
+                    <div class="minidot H5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot I1"></div>
+                    <div class="minidot I2"></div>
+                    <div class="minidot I3"></div>
+                    <div class="minidot I4"></div>
+                    <div class="minidot I5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot J1"></div>
+                    <div class="minidot J2"></div>
+                    <div class="minidot J3"></div>
+                    <div class="minidot J4"></div>
+                    <div class="minidot J5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot K1"></div>
+                    <div class="minidot K2"></div>
+                    <div class="minidot K3"></div>
+                    <div class="minidot K4"></div>
+                    <div class="minidot K5"></div>
+                </div>
+                <div class="resultElement">
+                    <div class="minidot L1"></div>
+                    <div class="minidot L2"></div>
+                    <div class="minidot L3"></div>
+                    <div class="minidot L4"></div>
+                    <div class="minidot L5"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

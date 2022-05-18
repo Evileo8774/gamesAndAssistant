@@ -4,6 +4,7 @@ $(document).ready(function(){
     $(".tic-tac-boum").on("click", function(){window.location.href = "html/tic-tac-boum.html";});
     $(".pendu").on("click", function(){window.location.href = "html/pendu.html";});
     $(".ttc").on("click", function(){window.location.href = "html/tictactoe.html";});
+    $(".mastermind").on("click", function(){window.location.href = "html/mastermind.html";});
 
     $(function(){
         var nav = $("nav");
